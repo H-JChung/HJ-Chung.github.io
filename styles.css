@@ -10,7 +10,7 @@
   --accent: #1f3a5f;
   --accent-tint: #eaeff5;
   --gold: #9c7a3c;
-  --max: 960px;
+  --max: 1120px;
 }
 
 * { box-sizing: border-box; }
@@ -22,8 +22,8 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: 'IBM Plex Sans', -apple-system, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
+  font-size: 17.5px;
+  line-height: 1.65;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -47,7 +47,7 @@ nav.wrap {
 
 .nav-name {
   font-family: 'Newsreader', serif;
-  font-size: 19px;
+  font-size: 20.3px;
   font-weight: 500;
   color: var(--ink);
   text-decoration: none;
@@ -62,7 +62,7 @@ nav.wrap {
 .nav-links a {
   color: var(--ink-soft);
   text-decoration: none;
-  font-size: 14px;
+  font-size: 15.3px;
 }
 
 .nav-links a:hover { color: var(--accent); }
@@ -95,7 +95,7 @@ header.hero {
   align-items: center;
   justify-content: center;
   color: var(--ink-faint);
-  font-size: 12px;
+  font-size: 13.3px;
   text-align: center;
   line-height: 1.4;
 }
@@ -103,20 +103,20 @@ header.hero {
 .hero h1 {
   font-family: 'Newsreader', serif;
   font-weight: 500;
-  font-size: 30px;
+  font-size: 31.3px;
   margin: 0 0 4px;
   color: var(--ink);
 }
 
 .hero .role {
   color: var(--ink-soft);
-  font-size: 15px;
+  font-size: 16.3px;
   margin: 0 0 14px;
 }
 
 .market-flag {
   display: inline-block;
-  font-size: 13px;
+  font-size: 14.3px;
   color: var(--accent);
   background: var(--accent-tint);
   padding: 4px 10px;
@@ -128,7 +128,7 @@ header.hero {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-  font-size: 14px;
+  font-size: 15.3px;
 }
 
 .hero-links a {
@@ -158,7 +158,7 @@ section.wrap {
 }
 
 .eyebrow {
-  font-size: 13px;
+  font-size: 14.3px;
   color: var(--ink-faint);
   margin: 0 0 6px;
 }
@@ -166,13 +166,22 @@ section.wrap {
 h2.section-title {
   font-family: 'Newsreader', serif;
   font-weight: 500;
-  font-size: 21px;
+  font-size: 22.3px;
   margin: 0 0 18px;
+}
+
+.page-title {
+  font-family: 'Newsreader', serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.35;
+  margin: 0 0 14px;
+  color: var(--ink);
 }
 
 .bio p {
   margin: 0 0 18px;
-  font-size: 16px;
+  font-size: 17.3px;
   color: var(--ink);
 }
 
@@ -191,20 +200,20 @@ h2.section-title {
 .agenda:first-of-type { border-top: none; padding-top: 0; }
 
 .agenda-label {
-  font-size: 12.5px;
+  font-size: 13.8px;
   letter-spacing: 0.02em;
   color: var(--ink-faint);
   margin: 0 0 4px;
 }
 
 .agenda-title {
-  font-size: 17px;
+  font-size: 18.3px;
   font-weight: 500;
   margin: 0 0 6px;
 }
 
 .agenda-q {
-  font-size: 14.5px;
+  font-size: 15.8px;
   color: var(--ink-soft);
   margin: 0 0 16px;
 }
@@ -217,14 +226,14 @@ h2.section-title {
   align-items: center;
   justify-content: center;
   color: var(--accent);
-  font-size: 13px;
+  font-size: 14.3px;
   text-align: center;
   padding: 20px;
   line-height: 1.6;
 }
 
 .figure-caption {
-  font-size: 13.5px;
+  font-size: 14.8px;
   color: var(--ink-soft);
   margin: 10px 0 0;
 }
@@ -240,11 +249,11 @@ h2.section-title {
 
 .pub:first-child { border-top: none; padding-top: 0; }
 
-.pub-title { margin: 0 0 3px; font-size: 15.5px; }
+.pub-title { margin: 0 0 3px; font-size: 16.8px; }
 
 .pub-meta {
   margin: 0;
-  font-size: 13.5px;
+  font-size: 14.8px;
   color: var(--ink-soft);
 }
 
@@ -258,7 +267,7 @@ h2.section-title {
   gap: 12px;
   padding: 10px 0;
   border-top: 1px solid var(--line);
-  font-size: 14.5px;
+  font-size: 15.8px;
 }
 
 .course:first-child { border-top: none; padding-top: 0; }
@@ -278,7 +287,7 @@ footer {
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 12px;
-  font-size: 13.5px;
+  font-size: 14.8px;
   color: var(--ink-faint);
 }
 
@@ -301,19 +310,19 @@ footer {
   flex-wrap: wrap;
   gap: 16px 28px;
   margin: 18px 0 16px;
-  font-size: 14px;
+  font-size: 15.3px;
 }
 
 .app-controls label {
   display: block;
   color: var(--ink-soft);
-  font-size: 12.5px;
+  font-size: 13.8px;
   margin-bottom: 4px;
 }
 
 .app-controls select {
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 14px;
+  font-size: 15.3px;
   color: var(--ink);
   background: var(--paper);
   border: 1px solid var(--line-strong);
@@ -335,13 +344,13 @@ footer {
 }
 
 .subscribe-note {
-  font-size: 13.5px;
+  font-size: 14.8px;
   color: var(--ink-soft);
   margin: 0;
 }
 
 .subscribe-btn {
-  font-size: 13.5px;
+  font-size: 14.8px;
   color: var(--paper);
   background: var(--accent);
   text-decoration: none;
@@ -370,21 +379,21 @@ footer {
   align-items: center;
   justify-content: center;
   color: var(--accent);
-  font-size: 11.5px;
+  font-size: 12.8px;
   text-align: center;
   padding: 10px;
   margin-bottom: 10px;
 }
 
 .diss-title {
-  font-size: 14.5px;
+  font-size: 15.8px;
   font-weight: 500;
   margin: 0 0 6px;
   line-height: 1.4;
 }
 
 .diss-desc {
-  font-size: 13px;
+  font-size: 14.3px;
   color: var(--ink-soft);
   margin: 0;
 }
@@ -397,14 +406,14 @@ footer {
 
 .pub-desc {
   margin: 6px 0 0;
-  font-size: 13.5px;
+  font-size: 14.8px;
   color: var(--ink-soft);
 }
 
 @media (max-width: 640px) {
   .hero-grid { grid-template-columns: 1fr; gap: 20px; }
   .portrait { width: 100%; height: 260px; }
-  .hero h1 { font-size: 25px; }
+  .hero h1 { font-size: 26.3px; }
   .nav-links { gap: 14px; }
 }
 
