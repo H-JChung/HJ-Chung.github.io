@@ -25,12 +25,15 @@
     });
   }
 
-  function open(title, desc, imgText) {
+  function open(title, descParas, imgText) {
     ensureOverlay();
+    var descHtml = descParas.map(function (d) {
+      return '<p class="lightbox-desc">' + d + "</p>";
+    }).join("");
     card.querySelector(".lightbox-body").innerHTML =
       '<div class="lightbox-img">' + imgText + "</div>" +
       '<p class="lightbox-title">' + title + "</p>" +
-      '<p class="lightbox-desc">' + desc + "</p>";
+      descHtml;
     overlay.classList.add("open");
     document.body.style.overflow = "hidden";
     card.querySelector(".lightbox-close").focus();
@@ -49,9 +52,12 @@
 
       function trigger() {
         var title = box.querySelector(".diss-title").textContent;
-        var desc = box.querySelector(".diss-desc").textContent;
+        var descParas = Array.prototype.map.call(
+          box.querySelectorAll(".diss-desc"),
+          function (p) { return p.textContent; }
+        );
         var imgText = box.querySelector(".diss-img").textContent;
-        open(title, desc, imgText);
+        open(title, descParas, imgText);
       }
 
       box.addEventListener("click", trigger);
