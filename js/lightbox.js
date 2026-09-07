@@ -56,8 +56,8 @@
           box.querySelectorAll(".diss-desc"),
           function (p) { return p.textContent; }
         );
-        var imgText = box.querySelector(".diss-img").textContent;
-        open(title, descParas, imgText);
+        var imgHtml = box.querySelector(".diss-img").innerHTML;
+        open(title, descParas, imgHtml);
       }
 
       box.addEventListener("click", trigger);
