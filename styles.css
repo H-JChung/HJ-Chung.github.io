@@ -396,6 +396,7 @@ footer {
   text-align: center;
   padding: 10px;
   margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .diss-img img,
@@ -551,6 +552,7 @@ footer {
   color: var(--accent);
   font-size: 17px;
   margin-bottom: 24px;
+  overflow: hidden;
 }
 
 .lightbox-title {
