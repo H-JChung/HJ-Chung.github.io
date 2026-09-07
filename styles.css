@@ -35,13 +35,18 @@ body {
 
 /* ---------- Nav ---------- */
 
-nav.wrap {
+.nav-bar {
+  background: var(--accent-tint);
+  border-bottom: 1px solid var(--line);
+}
+
+.nav-inner {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 12px 24px;
-  padding-top: 28px;
+  padding-top: 18px;
   padding-bottom: 20px;
 }
 

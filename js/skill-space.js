@@ -10,13 +10,16 @@
 
   function loadData(level) {
     slot.innerHTML = '<div style="padding:2rem; text-align:center; color:var(--ink-faint); font-size:13px;">Loading…</div>';
+    var isFirstLoad = state.data === null;
     fetch(FILES[level])
       .then(function (r) { return r.json(); })
       .then(function (json) {
         state.data = json;
         populateSkillSelects(json.skills);
-        state.xi = 0;
-        state.yi = Math.min(1, json.skills.length - 1);
+        if (isFirstLoad || state.xi >= json.skills.length || state.yi >= json.skills.length) {
+          state.xi = 0;
+          state.yi = Math.min(1, json.skills.length - 1);
+        }
         dim1Sel.value = state.xi;
         dim2Sel.value = state.yi;
         render();
